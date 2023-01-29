@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #172b4d;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    min-width: 300px;
+    min-height: 30%;
+    height: 100vh;
+    background-color: #6667AB;
+}
+
+.column {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.title {
+    padding: 15px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.trello {
+    padding: 0px 10px;
+    width: 100%;
+    height: calc(100% - 154px);
+    overflow-y: auto;
+}
+
+.add-card {
+    width: 100%;
+    height: 100px;
+    padding: 70.5px 10px 10px 10px;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+
+.add-tasks-control {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.add-tasks-input {
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    resize: none;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 6px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.add-tasks-input:focus {
+    border: none;
+    outline: none;
+}
+
+.add-tasks-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.add-tasks-submit {
+    display: block;
+    width: 80px;
+    background-color: #52a300 ;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+}
+
+.add-tasks-submit:hover {
+    cursor: pointer;
+}
+
+.add-tasks-cancel {
+    color: #172b4d;
+}
+
+.add-tasks-cancel:hover {
+    cursor: pointer;
+}
+
+.text {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    resize: none;
+    margin-top: 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 6px;
+    width: 100%;
+    height: 55px;
+    font-size: 12px;
+}
+
+.another {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    color: #172b4d;
+}
+
+.hidden {
+    display: none;
+}
+
+.top-change {
+    margin-top: 59px;
+}
